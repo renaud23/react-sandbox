@@ -24,5 +24,9 @@
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.5",
     "redux": "^3.7.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/renaud23/react-sandbox.git"
   }
 }
