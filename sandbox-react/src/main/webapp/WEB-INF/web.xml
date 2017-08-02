@@ -20,7 +20,7 @@
 
 	<servlet-mapping>
 		<servlet-name>index-dispatcher</servlet-name>
-		<url-pattern>/accueil</url-pattern>
+		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 
 	<!-- For root context -->

@@ -1,4 +1,4 @@
-const layoutReducer = (state = {}, action) => {
+const layoutReducer = (state = {username: 'Renaud'}, action) => {
   switch (action.type) {
     default:
       return state;
