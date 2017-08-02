@@ -5,7 +5,7 @@ class Layout extends Component {
 
 
     render(){
-        return (<div>{Children.only(this.props.children)}</div>);
+        return (<div className="layout">{Children.only(this.props.children)}</div>);
     }
 }
 

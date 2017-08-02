@@ -8,6 +8,10 @@ import thunk from 'redux-thunk';
 
 import ApplicationRouter from './application-router';
 
+
+import './../scss/application.scss';
+
+
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(combinedReducers, composeEnhancers(
   applyMiddleware(thunk)
