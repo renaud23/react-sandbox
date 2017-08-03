@@ -10,7 +10,7 @@
         http://www.springframework.org/schema/context/spring-context.xsd ">
 
 	<context:component-scan base-package="fr.insee.sandboxReact" />
-	<mvc:resources mapping="/static/**" location="/static/" />
+	
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
@@ -20,7 +20,7 @@
 
 
 
-
+	<mvc:resources mapping="/static/**" location="/static/" order="0" />
 	<mvc:view-controller path="/**" view-name="/index"/>
 	<mvc:annotation-driven />
 
