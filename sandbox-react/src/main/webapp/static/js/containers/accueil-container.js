@@ -1,13 +1,18 @@
 import { connect } from 'react-redux';
 import Accueil from './../components/accueil';
+import { getUtilisateur } from './../actions/accueil-actions';
 
 const mapStateToProps = state => {
-    const { username } = state.layoutReducer;
-    return { username };
+    const { prenom, nom } = state.applicationReducer.utilisateur;
+    return { prenom, nom };
 }
 
 const mapDispatchToProps = dispatch => {
-    return {};
+    return {
+        getUtilisateur: (nom, prenom) => {
+            dispatch(getUtilisateur(nom, prenom));
+        }
+    };
 }
 
 const AccueilContainer = connect(

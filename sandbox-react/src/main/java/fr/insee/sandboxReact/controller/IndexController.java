@@ -1,4 +1,4 @@
-package fr.insee.sandboxReact;
+package fr.insee.sandboxReact.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

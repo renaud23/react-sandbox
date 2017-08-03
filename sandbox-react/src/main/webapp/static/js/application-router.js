@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Accueil from "./containers/accueil-container";
-import Layout from "./components/layout";
+import Layout from "./containers/layout-container";
 import PageNotFound from "./components/page-not-found";
 
 const ApplicationRouter = () => {
