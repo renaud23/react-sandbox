@@ -7,14 +7,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-public class IndexController {
-	private final Logger logger = LoggerFactory.getLogger(IndexController.class);
+public class AccueilController {
+	private final Logger logger = LoggerFactory.getLogger(AccueilController.class);
 	
-	public IndexController() {}
+	public AccueilController() {}
 	
 	
-	@RequestMapping(name="/accueil",method = RequestMethod.GET)
-	public String index() {
+	@RequestMapping(path="/accueil",method = RequestMethod.GET)
+	public String accueil() {
 		logger.info("Index start");
 		return "accueil";
 	}

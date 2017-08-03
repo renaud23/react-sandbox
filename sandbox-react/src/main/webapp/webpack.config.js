@@ -5,7 +5,7 @@ module.exports = {
     app: ["./static/js/index.js"]
   },
   output: {
-    path: path.resolve(__dirname, "/static/js/build"),
+    path: path.resolve(__dirname, "static/build"),
     filename: "bundle.js"
   },
   module: {

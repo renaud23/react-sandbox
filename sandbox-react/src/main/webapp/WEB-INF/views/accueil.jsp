@@ -10,6 +10,6 @@
 		<div id="application"></div>
 	
 	
-		<script type="text/javascript"  src="<c:url value="/static/build/bundle.js"/>"></script>
+		<script type="text/javascript" src="static/build/bundle.js"></script>
 	</body>
 </html>
