@@ -26,7 +26,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loaders: ['style-loader', 'css-loader?sourceMap', 'sass-loader?sourceMap']
+        loaders: ['style-loader', 'css-loader?sourceMap', 'sass-loader?includePaths[]=' + path.resolve(__dirname, "./node_modules/compass-mixins/lib")]
       }
 
     ]

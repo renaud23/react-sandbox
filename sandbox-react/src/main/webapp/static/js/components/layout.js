@@ -14,6 +14,6 @@ class Layout extends Component {
 }
 
 
-const PreLoader = () => (<div><img src="/sandbox-react/static/images/preloader.gif" /></div>);
+const PreLoader = () => (<div className="waiting"><img src="/sandbox-react/static/images/preloader.png" /></div>);
 
 export default Layout;
