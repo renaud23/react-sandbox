@@ -1,19 +1,15 @@
-import { connect } from 'react-redux';
-import Layout from './../components/layout';
-
+import { connect } from "react-redux";
+import Layout from "./../components/layout";
 
 const mapStateToProps = state => {
-    const { waiting } = state.layoutReducer;
-    return { waiting };
-}
+  const { waiting, init } = state.layoutReducer;
+  return { waiting, init };
+};
 
 const mapDispatchToProps = dispatch => {
-    return {};
-}
+  return {};
+};
 
-const LayoutContainer = connect(
-    mapStateToProps,
-    mapDispatchToProps
-)(Layout);
+const LayoutContainer = connect(mapStateToProps, mapDispatchToProps)(Layout);
 
 export default LayoutContainer;
