@@ -40,6 +40,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/renaud23/react-sandbox.git"
+    "url": "git@github.com:renaud23/react-sandbox.git"
   }
 }
