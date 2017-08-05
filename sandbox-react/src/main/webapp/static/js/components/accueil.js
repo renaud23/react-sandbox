@@ -6,6 +6,7 @@ class Accueil extends Component {
     super(props);
   }
   componentDidMount() {
+    //
     this.props.getUtilisateur("renaud", "genevois");
   }
 
