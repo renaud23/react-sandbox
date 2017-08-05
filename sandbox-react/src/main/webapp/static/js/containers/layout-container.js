@@ -1,13 +1,18 @@
 import { connect } from "react-redux";
 import Layout from "./../components/layout";
+import { getLayout } from "./../actions/layout-actions";
 
 const mapStateToProps = state => {
-  const { waiting, init } = state.layoutReducer;
-  return { waiting, init };
+  const { waiting, layoutReady } = state.layoutReducer;
+  return { waiting, layoutReady };
 };
 
 const mapDispatchToProps = dispatch => {
-  return {};
+  return {
+    getLayout: () => {
+      dispatch(getLayout());
+    }
+  };
 };
 
 const LayoutContainer = connect(mapStateToProps, mapDispatchToProps)(Layout);

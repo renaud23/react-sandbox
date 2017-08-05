@@ -1,6 +1,14 @@
 import React, { Component, Children } from "react";
 
 class Layout extends Component {
+  componentDidMount() {
+    this.props.getLayout();
+  }
+
+  shouldComponentUpdate(nextProps, nextState) {
+    return this.props.layoutReady;
+  }
+
   render() {
     const { waiting } = this.props;
     return (

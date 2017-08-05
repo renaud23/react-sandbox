@@ -9,13 +9,9 @@ class Accueil extends Component {
     this.props.getUtilisateur("renaud", "genevois");
   }
 
-  componentWillReceiveProps(nextProps) {
-    console.log("componentWillReceiveProps");
-  }
+  componentWillReceiveProps(nextProps) {}
 
-  componentWillUpdate() {
-    console.log("componentWillUpdate");
-  }
+  componentWillUpdate() {}
 
   render() {
     const { nom, prenom } = this.props;
