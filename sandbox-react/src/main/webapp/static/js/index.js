@@ -12,8 +12,6 @@ import ApplicationRouter from "./application-router";
 
 import "./../scss/application.scss";
 
-// Coucou
-
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(
   combinedReducers,
