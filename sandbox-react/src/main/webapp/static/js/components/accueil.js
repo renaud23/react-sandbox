@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import { transform } from "./../grammaire/transformation";
 
 class Accueil extends Component {
   constructor(props) {
@@ -7,6 +8,7 @@ class Accueil extends Component {
   }
   componentDidMount() {
     this.props.getUtilisateur("renaud", "genevois");
+    this.props.getProduit("1234");
   }
 
   componentWillReceiveProps(nextProps) {}
@@ -14,11 +16,16 @@ class Accueil extends Component {
   componentWillUpdate() {}
 
   render() {
-    const { nom, prenom } = this.props;
+    const { nom, prenom, produit } = this.props;
+    const transfo = produit !== null ? transform(produit) : null;
+
     return (
-      <h1>
-        Hello <span>{prenom}</span> <span>{nom}</span> !
-      </h1>
+      <div>
+        <h1>
+          Hello <span>{prenom}</span> <span>{nom}</span> !
+        </h1>
+        {transfo}
+      </div>
     );
   }
 }
